@@ -1,0 +1,94 @@
+<html>
+<div id="container">
+    <div style="color:red;background-color:black">CSE</div>
+</div>
+<div class="test"><img src="http://www.ourtripvideos.com/images/PicturesForBlog/2012/BECBapatlaAPInd/Big/DSC_9724.jpg" alt="Internet Connection Required"></div>
+<div>Long Press in the Circle View Image </div>
+
+</html>
+<style>
+    body
+{
+    background-color: #fff;
+}
+a{ color:#fff; }
+#container {
+
+width: 250px;
+height: 250px;
+padding:5px;
+position: relative;
+    background-image: linear-gradient(bottom, #F24D55 56%, #FF924F 57%, #FFC164 74%, #62C374 74%, #F24D55 34%, #00AEDA 33%);
+background-image: -o-linear-gradient(bottom, #F24D55 56%, #FF924F 57%, #FFC164 74%, #62C374 74%, #F24D55 34%, #00AEDA 33%);
+background-image: -moz-linear-gradient(bottom, #F24D55 56%, #FF924F 57%, #FFC164 74%, #62C374 74%, #F24D55 34%, #00AEDA 33%);
+background-image: -webkit-linear-gradient(bottom, #F24D55 56%, #FF924F 57%, #FFC164 74%, #62C374 74%, #F24D55 34%, #00AEDA 33%);
+background-image: -ms-linear-gradient(bottom, #F24D55 56%, #FF924F 57%, #FFC164 74%, #62C374 74%, #F24D55 34%, #00AEDA 33%);
+-webkit-animation-name: rotate;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: .5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.56, #F24D55),
+	color-stop(0.57, #FF924F),
+	color-stop(0.74, #FFC164),
+	color-stop(0.74, #62C374),
+	color-stop(0.34, #F24D55),
+	color-stop(0.33, #00AEDA)
+);
+    border-radius:50%;
+}
+
+#container div {
+background-color: #333;
+    color:#fff;
+font-size: 20px;
+text-align: center;
+
+min-height: 100%;
+    border-radius:50%;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+.test{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  position:absolute;
+  margin-top:-255px;
+  margin-left:5px;
+}
+.test img {
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  position:absolute;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+transition: .5s ease-out;
+   -moz-transition: .5s ease-out;
+   -webkit-transition: .5s ease-out;
+}
+.test img:active {
+   filter: blur(0.6px);
+  -webkit-filter: blur(0.6px);
+  width:250px;
+  height:250px;
+  border-radius:50%;
+}
+</style>

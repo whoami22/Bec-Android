@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbDown"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="#f9a825"
+        app:titleTextColor="#fff"
+        app:title="Downloads"
+        android:foregroundTint="#f9a825"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/csed"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tbDown"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="62dp"
+        android:onClick="get"
+        android:text="CSE" />
+
+    <Button
+        android:id="@+id/itd"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/csed"
+        android:layout_alignBottom="@+id/csed"
+        android:layout_alignParentEnd="true"
+        android:onClick="get"
+        android:paddingEnd="20dp"
+        android:text="IT" />
+
+    <Button
+        android:id="@+id/eced"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/csed"
+        android:layout_below="@+id/csed"
+        android:layout_marginTop="40dp"
+        android:onClick="get"
+        android:text="ECE" />
+
+    <Button
+        android:id="@+id/eeed"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:onClick="get"
+        android:layout_alignBaseline="@+id/eced"
+        android:layout_alignBottom="@+id/eced"
+        android:layout_alignStart="@+id/itd"
+        android:text="EEE" />
+
+    <Button
+        android:id="@+id/eied"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:onClick="get"
+        android:layout_alignStart="@+id/eced"
+        android:layout_below="@+id/eced"
+        android:layout_marginTop="48dp"
+        android:text="EIE" />
+
+    <Button
+        android:id="@+id/med"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:onClick="get"
+        android:layout_alignBaseline="@+id/eied"
+        android:layout_alignBottom="@+id/eied"
+        android:layout_alignStart="@+id/eeed"
+        android:text="MECH" />
+
+    <Button
+        android:id="@+id/chd"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:onClick="get"
+        android:layout_alignStart="@+id/eied"
+        android:layout_below="@+id/eied"
+        android:layout_marginTop="59dp"
+        android:text="CHEMICAL" />
+
+    <Button
+        android:id="@+id/ced"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:onClick="get"
+        android:layout_alignBaseline="@+id/chd"
+        android:layout_alignBottom="@+id/chd"
+        android:layout_alignStart="@+id/med"
+        android:text="CIVIL" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

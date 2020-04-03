@@ -1,0 +1,73 @@
+<body>
+</body>
+<style>
+    table{
+        width: 100%;
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		 font-size:14px;
+         border-collapse: collapse;
+		 background-color:white
+    }
+    th, td {
+        border-bottom: 1px solid #ddd;
+         padding: 15px;
+        text-align: left;
+    }
+	 tr:nth-child(even){background-color: #f2f2f2;}
+	th{
+		background-color: #4CAF50;
+
+		color:#ffffff
+	}
+</style>
+<script>
+    var table = document.createElement('table');
+     var names = new Array("Dr. Nagalla Sudhakar", "Prof.Vetagiri Chakradhar", "Dr. P.S.V.Vachaspati", "Sri. P.Pardhasaradhi", "Dr. SK.Nazeer", "Sri. M.Rajesh Babu", "Smt. CH.Mangamma", "Sri. K.Kishanchand", "Sri. T.Nagarjuna", "Sri. K.Arun Babu", "Sri. K.Mani Deep", "Sri. V.Naveen Kumar", "Sri. R.Pavan Kartheek", "Sri. S.Naga Chandra Sekhar ", "Sri. J.Kumara Raja ", "Sri. R.Veera Mohan Rao", "Mrs. M. Karuna ", "Sri. A. Ravi Kishore ", "Sri. J.Madhan Kumar ", "Sri. P. Nandha Kishore ", "Sri.P.Bala Krishna", "Sri.G.Ramesh Babu", "Sri.N.Phanindra", "Sri. B. Prashanth Babu ", "Sri. K. Ashok Babu", "Sri. D.Venkatesh", "Sri. E.Esaswini", "Sri. K.Y.V.Nagendra Babu", "Sri. N.Junnu Babu", "Sri. M.Srikanth");
+     var designation = new Array("Professor", "Professor", "Professor", "Associate Prof.", "Prof.& Head of Dept.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof.");
+     var qualification =new Array("M.Tech, Ph.D", "M.Tech.", "M.Tech.", "M. Tech.", "M.Tech,Ph.D", "M.Tech.", "M. Tech", "M.Tech", "M.Tech", "M. Tech.", "M. Tech.", "M. Tech.", "M. Tech.", "M. Tech.", "M. Tech.", "M. Tech.", "M. Tech.", "M. Tech.", "M. Tech.", "M. Tech.", "M.Tech", "M.Tech",  "M.Tech", "M.Tech.", "M.Tech.", "M.Tech.", "M.Tech.", "M.Tech.", "M.Tech.", "M.Tech.");
+     var experience = new Array("30y", "29y", "16y", "15y", "15y", "13y", "7y", "7.5y", "6.6y", "4.6y ", "4.6y ", "4.6y", "4.6y", "7y", "3.5y", "3.5y", "2y", "2y", "2y", "2y", "7y", "6y", "1y", "", "1y", "4 Months", "4 Months", "4 Months", "4 Months", "4 Months");
+    var mails = new Array("suds_nagalla@yahoo.com,suds.nagalla@gmail.com", "cdvetagiri@gmail.com", "psvvachaspati@yahoo.com", "pardhu.pathella@gmail.com", "shk_nazir@yahoo.co.in,drnazeersk@gmail.com", "mrb.csebec@gmail.com", "mangachoppara@gmail.com", "kishanchandkopila@gmail.com", "nagarjuna595@gmail.com", "arunkarumanchi123@gmail.com", "manideep.karumanchi@gmail.com", "naveenvipparla@gmail.com", "pavankartheek.r@gmail.com", "schandu.bec@gmail.com", "rajkumar_cse2007@yahoo.co.in", "veeramohan.it65@gmail.com", "karuna.painam@gmail.com", "ravikishore4u.2010@gmail.com", "madhan.mtcse@gmail.com", "nandakishore.pujala@gmail.com ", "balakrishnamtech@gmail.com", "rameshbabugcse@gmail.com", "naralasetty99@gmail.com", "prashanthbabubandi@gmail.com", "thyashok@gmail.com", "venateshdevarapalli@gmail.com", "eedaraesaswini@gmail.com", "nagendra01.babu@gmail.com", "njb.babu016@gmail.com", "srikanthu561@gmail.com");
+      var tr = document.createElement('tr');
+      var th = document.createElement('th');
+      th.appendChild(document.createTextNode('SNo.'));
+       var th1 = document.createElement('th');
+      th1.appendChild(document.createTextNode('Name'));
+       var th2 = document.createElement('th');
+      th2.appendChild(document.createTextNode('Designation'));
+       var th3 = document.createElement('th');
+      th3.appendChild(document.createTextNode('Qualification'));
+       var th4 = document.createElement('th');
+      th4.appendChild(document.createTextNode('Experience'));
+       var th5 = document.createElement('th');
+      th5.appendChild(document.createTextNode('E-Mail'));
+      tr.appendChild(th);
+      tr.appendChild(th1);
+      tr.appendChild(th2);
+      tr.appendChild(th3);
+      tr.appendChild(th4);
+      tr.appendChild(th5);
+      table.appendChild(tr);
+for (var i = 0; i <names.length; i++){
+        var tr = document.createElement('tr');
+        var td = document.createElement('td');
+        var td1 = document.createElement('td');
+        var td2 = document.createElement('td');
+        var td3 = document.createElement('td');
+        var td4= document.createElement('td');
+        var td5 = document.createElement('td');
+        td.appendChild(document.createTextNode(i+1));
+        td1.appendChild(document.createTextNode(names[i]));
+        td2.appendChild(document.createTextNode(designation[i]));
+        td3.appendChild(document.createTextNode(qualification[i]));
+        td4.appendChild(document.createTextNode(experience[i]));
+        td5.appendChild(document.createTextNode(mails[i]));
+        tr.appendChild(td);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
+    }
+    document.body.appendChild(table);
+</script></body>

@@ -1,0 +1,74 @@
+<body>
+<b>Faculty Info</b>
+</body>
+<style>
+    table{
+        width: 100%;
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		 font-size:14px;
+         border-collapse: collapse;
+		 background-color:white
+    }
+    th, td {
+        border-bottom: 1px solid #ddd;
+         padding: 15px;
+        text-align: left;
+    }
+	 tr:nth-child(even){background-color: #f2f2f2;}
+	th{
+		background-color: #4CAF50;
+
+		color:#ffffff
+	}
+</style>
+<script>
+    var table = document.createElement('table');
+     var names = new Array("Dr.M.Venkateswara Rao" ,"Sri. V.C.A.Vara Kumar" ,"Dr. T. Nancharaiah" ,"Dr. B. Ravi Sankar" ,"Dr. Ch. Lakshmi Srinivas" ,"Sri.T.Siva Sankhar" ,"Sri.G.Kantha Prasad" ,"Sri.K.Prasad Rao" ,"Sri.D.Narayana Chowdary" ,"Sri.K.Srinivasa Rao" ,"Sri.P.Uma Maheswar Rao" ,"Sri.S.Vijay" ,"Sri.B.I.Hussain" ,"Smt.J.Laxmi Lalitha" ,"Sri.Y.Naredra Babu" ,"Sri.S.Krugon" ,"Sri.S.Ravi Kumar" ,"Sri.D.Vijay Praveen" ,"Sri.K.Raja Sekhara Babu" ,"Sri.M.Pardha Saradhi" ,"Sri.A.Praveen" ,"Sri.V.Srinivasulu" ,"Sri.K.Seshagiri Rao" ,"Sri.B.Visweswara" ,"Sri.Sk.A.Rahim" ,"Sri. M.Subrahmanyam" ,"Sri. A.Suresh" ,"Sri.Ch.L.Pruthvi Raz" ,"Ms.P.Naga Harika" ,"Sri.B.Sandeep" ,"Sri.S.Praneeth Babu" ,"Sri.G.Raghunatha Reddy" ,"Sri.A.Babi Reddy");
+     var designation = new Array("Professor" ,"Professor" ,"Professor & HOD " ,"Professor" ,"Professor" ,"Assoc.Professor" ,"Assoc.Professor" ,"Assoc.Professor" ,"Assoc.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor" ,"Assist.Professor");
+     var qualification =new Array("M.E(Machine Design & Analysis), Ph.D (FRP Composites)" ,"M.Tech,(Ph.D)(Machine Design)" ,"M.Tech.,Ph.D(Prod.Engg.)" ,"M.Tech.,Ph.D(Thermal Engineering)" ,"M.E.,Ph.D(Production Engg.)" ,"M.Tech.,(Heat Power)" ,"M.E.,(Machine Design)" ,"M.Tech.,(Production Engg.)" ,"M.E.,(Ph.D)(Engg. Design)" ,"M.Tech.,(Advac.Manufacturing Sys.)" ,"M.Tech.(Ph.D),(Energy.Sys.Engg.)" ,"M.Tech.,(Ph.D)(Manufacturing Tech.)" ,"M.Tech.,MBA.,(Ph.D)(CAD/CAM)" ,"M.Tech.,(Ph.D),(CAD/CAM)" ,"M.Tech.,(Ph.D)(CAD/CAM)" ,"M.Tech.,(Ph.D)(Industrial Engg. & Mgmt.)" ,"M.Tech.(IIT,Delhi)(Industrial Tribology)" ,"M.Tech.,(Ph.D)(CAD/CAM)" ,"M.Tech.,(CAD/CAM)" ,"M.Tech.,(CAD/CAM)" ,"M.Tech.,(Ph.D)(Refregiration & AC.)" ,"M.Tech.,(Production Engg.)" ,"M.Tech.,(Refrigeration & AC.)" ,"M.Tech.,(Manufacturing Tech.)" ,"M.Tech.,(Process Metallurgy.)" ,"M.Tech.,(Prod. Eng.)" ,"M.Tech.,(Thermal System)" ,"M.Tech.,(Manufacturing)" ,"M.Tech.,(Thermal Engg.)" ,"M.Tech.,(Machine Design)" ,"M.Tech.,(Machine Design)" ,"M.Tech.,(Materials Technology)" ,"M.Tech.,(Machine Design)");
+     var experience = new Array("26y" ,"34y" ,"17y" ,"12y" ,"15y" ,"33y" ,"33y" ,"17y" ,"19y" ,"16y" ,"11y" ,"13y" ,"10y" ,"9y" ,"10y" ,"8y" ,"8y" ,"8y" ,"8y" ,"7y" ,"8y" ,"6y" ,"6.5y" ,"1.5y" ,"2.5y" ,"1y" ,"1y" ,"1y" ,"3 Months" ,"1.6y" ,"2.4y" ,"1.5y" ,"2.4y");
+    var mails = new Array("mvr2007rao@rediffmail.com" ,"anandavara@yahoo.com" ,"tata_nr@rediffmail.com" ,"ravinano@gmail.com" ,"chlsbec@gmail.com" ,"sivasankhartada@gmail.com" ,"kpganta07@gmail.com" ,"kprbec@gmail.com" ,"bec_mech@rediff.com" ,"ksrbecmech@gmail.com" ,"maheshponugoti@gmail.com" ,"vizzu515@gmail.com" ,"iftekharhussainb@gmail.com" ,"laxmilalithajanapati@gmail.com" ,"narendra.yerra@gmail.com" ,"seelamKrugon@gmail.com" ,"ravikumar.saranu@gmail.com" ,"d.vijay.praveen@gmail.com" ,"rajabecmech@gmail.com" ,"pardhasaradhimathi@gmail.com" ,"praveen.tng@gmail.com" ,"srinuv_34@yahoo.com" ,"Seshu1712@gmail.com" ,"visuvisweswara.642@gmail.com" ,"raheem.pm07@gmail.com" ,"msm9652@gmail.com" ,"suresh.avula321@gmail.com" ,"prithvirazleela@gmail.com" ,"harikaponakala@gmail.com" ,"boppudisandeep@gmail.com" ,"praneethsuddapalli92@gmail.com" ,"raghureddy_g@rocketmail.com" ,"babi.reddy5@gmail.com");
+      var tr = document.createElement('tr');
+      var th = document.createElement('th');
+      th.appendChild(document.createTextNode('SNo.'));
+       var th1 = document.createElement('th');
+      th1.appendChild(document.createTextNode('Name'));
+       var th2 = document.createElement('th');
+      th2.appendChild(document.createTextNode('Designation'));
+       var th3 = document.createElement('th');
+      th3.appendChild(document.createTextNode('Qualification'));
+       var th4 = document.createElement('th');
+      th4.appendChild(document.createTextNode('Experience'));
+       var th5 = document.createElement('th');
+      th5.appendChild(document.createTextNode('E-Mail'));
+      tr.appendChild(th);
+      tr.appendChild(th1);
+      tr.appendChild(th2);
+      tr.appendChild(th3);
+      tr.appendChild(th4);
+      tr.appendChild(th5);
+      table.appendChild(tr);
+for (var i = 0; i <names.length; i++){
+        var tr = document.createElement('tr');
+        var td = document.createElement('td');
+        var td1 = document.createElement('td');
+        var td2 = document.createElement('td');
+        var td3 = document.createElement('td');
+        var td4= document.createElement('td');
+        var td5 = document.createElement('td');
+        td.appendChild(document.createTextNode(i+1));
+        td1.appendChild(document.createTextNode(names[i]));
+        td2.appendChild(document.createTextNode(designation[i]));
+        td3.appendChild(document.createTextNode(qualification[i]));
+        td4.appendChild(document.createTextNode(experience[i]));
+        td5.appendChild(document.createTextNode(mails[i]));
+        tr.appendChild(td);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
+    }
+    document.body.appendChild(table);
+</script></body>

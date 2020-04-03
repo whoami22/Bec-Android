@@ -1,0 +1,170 @@
+<html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+<div class="loader_all">
+    <div class="loader loader_1 n1"></div>
+    <div class="loader loader_2 n2"></div>
+    <div class="loader loader_3 n3"></div>
+    <div class="loader loader_4 n4"></div>
+    <div class="loader loader_5 n5"></div>
+    <div class="loader loader_6 n6"></div>
+    <div class="loader loader_7 n7"></div>
+    <div class="loader loader_8 n8"></div>
+    <div class="loader loader_9 n9"></div>
+    <div class="loader loader_10 n10"></div>
+</div>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Lato:400,900|Montez);
+
+body {
+  background: #000000;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  min-height: 1000px;
+  overflow: hidden;
+}
+
+@keyframes anim {
+    0% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+    100% {-webkit-transform: rotateX(1080deg) rotateY(360deg);}
+}
+@-webkit-keyframes anim {
+    0% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+    100% {-webkit-transform: rotateX(1080deg) rotateY(360deg);}
+}
+@-moz-keyframes anim {
+    0% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+    100% {-webkit-transform: rotateX(1080deg) rotateY(360deg);}
+}
+@-ms-keyframes anim {
+    0% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+    100% {-webkit-transform: rotateX(1080deg) rotateY(360deg);}
+}
+@-o-keyframes anim {
+    0% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+    100% {-webkit-transform: rotateX(1080deg) rotateY(360deg);}
+}
+
+.bt {
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+}
+
+.play {
+  font-family: Montez;
+  font-size: 4em;
+  text-align: center;
+  color: #D42C2C;
+}
+
+.loader_all {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin: -130px auto auto -130px;
+  width: 260px;
+  height: 260px;
+}
+.loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 5px solid rgba(255, 255, 255, 0.45);
+  width: 250px;
+  height: 250px;
+
+  border-radius: 125px;
+  -webkit-border-radius: 125px;
+  -moz-border-radius: 125px;
+  -ms-border-radius: 125px;
+  -o-border-radius: 125px;
+}
+.n1 {
+  animation:anim 2.10s infinite linear;
+  -webkit-animation:anim 2.10s infinite linear;
+  -moz-animation:anim 2.10s infinite linear;
+  -ms-animation:anim 2.10s infinite linear;
+  -o-animation:anim 2.10s infinite linear;
+}
+.n2 {
+  animation:anim 2.12s infinite linear;
+  -webkit-animation:anim 2.12s infinite linear;
+  -moz-animation:anim 2.12s infinite linear;
+  -ms-animation:anim 2.12s infinite linear;
+  -o-animation:anim 2.12s infinite linear;
+}
+.n3 {
+  animation:anim 2.13s infinite linear;
+  -webkit-animation:anim 2.13s infinite linear;
+  -moz-animation:anim 2.13s infinite linear;
+  -ms-animation:anim 2.13s infinite linear;
+  -o-animation:anim 2.13s infinite linear;
+}
+.n4 {
+  animation:anim 2.14s infinite linear;
+  -webkit-animation:anim 2.14s infinite linear;
+  -moz-animation:anim 2.14s infinite linear;
+  -ms-animation:anim 2.14s infinite linear;
+  -o-animation:anim 2.14s infinite linear;
+}
+.n5 {
+  animation:anim 2.15s infinite linear;
+  -webkit-animation:anim 2.15s infinite linear;
+  -moz-animation:anim 2.15s infinite linear;
+  -ms-animation:anim 2.15s infinite linear;
+  -o-animation:anim 2.15s infinite linear;
+}
+.n6 {
+  animation:anim 2.16s infinite linear;
+  -webkit-animation:anim 2.16s infinite linear;
+  -moz-animation:anim 2.16s infinite linear;
+  -ms-animation:anim 2.16s infinite linear;
+  -o-animation:anim 2.16s infinite linear;
+}
+.n7 {
+  animation:anim 2.17s infinite linear;
+  -webkit-animation:anim 2.17s infinite linear;
+  -moz-animation:anim 2.17s infinite linear;
+  -ms-animation:anim 2.17s infinite linear;
+  -o-animation:anim 2.17s infinite linear;
+}
+.n8 {
+  animation:anim 2.18s infinite linear;
+  -webkit-animation:anim 2.18s infinite linear;
+  -moz-animation:anim 2.18s infinite linear;
+  -ms-animation:anim 2.18s infinite linear;
+  -o-animation:anim 2.18s infinite linear;
+}
+.n9 {
+  animation:anim 2.19s infinite linear;
+  -webkit-animation:anim 2.19s infinite linear;
+  -moz-animation:anim 2.19s infinite linear;
+  -ms-animation:anim 2.19s infinite linear;
+  -o-animation:anim 2.19s infinite linear;
+}
+.n10 {
+  animation:anim 2.20s infinite linear;
+  -webkit-animation:anim 2.20s infinite linear;
+  -moz-animation:anim 2.20s infinite linear;
+  -ms-animation:anim 2.20s infinite linear;
+  -o-animation:anim 2.20s infinite linear;
+}
+</style>
+<script>
+    $(document).ready(function() {
+    $('.bt').click(function(){
+        for (var i = 1; i <= 10; i++) {
+            $('.loader_'+i).toggleClass('n'+i);
+        }
+    });
+});
+</script>
+</html>

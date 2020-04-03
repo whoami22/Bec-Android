@@ -1,0 +1,73 @@
+<body>
+</body>
+<style>
+    table{
+        width: 100%;
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		 font-size:14px;
+         border-collapse: collapse;
+		 background-color:white
+    }
+    th, td {
+        border-bottom: 1px solid #ddd;
+         padding: 15px;
+        text-align: left;
+    }
+	 tr:nth-child(even){background-color: #f2f2f2;}
+	th{
+		background-color: #4CAF50;
+
+		color:#ffffff
+	}
+</style>
+<script>
+    var table = document.createElement('table');
+     var names = new Array("Dr. B.Chandra Mohan" ,"Dr. N.Venkateswara Rao" ,"Sri. K. Sambasiva Rao" ,"Sri. P. Surendra Kumar" ,"Sri. Ch.Altaff Hussain" ,"Smt. D.Swetha" ,"Sri. SK.Mahaboob Subhani" ,"Sri. T.Krishna Chaitanya" ,"Sri. M.Suneel" ,"Sri. B.Surendra Babu" ,"Sri. Sk.Idrish" ,"Sri. P.P.M.Prasad" ,"Smt. N. Naga Swathi" ,"Smt. Y. Sruthi" ,"Smt. P. Tejaswi" ,"Sri. K.Naga Raju" ,"Sri. Sd.Imran Basha " ,"Kum. K.Kalpana" ,"Sri. P. Vasudeva Reddy" ,"Sri. S. Ramesh" ,"Sri. P. Ravi " ,"Sri. D. Suneel Varma " ,"Sri. Y.CH.S.Hareesh" ,"Sri. U.Uma Maheswara rao" ,"Sri. B.Achyut Chowdary" ,"Sri. D.Gopi chand" ,"Sri. N.V.Ramesh" ,"Sri G.Mahesh " ,"Smt Sk.Apsana parveen ");
+     var designation = new Array("Professor & HOD" ,"Professor" ,"Associate Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof.");
+     var qualification =new Array("M. Tech. (Microwave & Radar Engg.), Ph.D" ,"M.E.,(Microwave & Radar Engg.), Ph.D" ,"M.Tech. (Instrumentation Engineering)" ,"M.Tech., (Ph.D) " ,"M.Tech., (Ph.D) " ,"M.Tech. " ,"M.Tech " ,"M.Tech., (Ph.D) " ,"M.Tech., (Ph.D) " ,"M.Tech. (Communication & Radar Systems)" ,"M.Tech. (Embedded Systems)" ,"M.Tech. (Embedded Systems)" ,"M.Tech. (Digital Electronics & Communications)" ,"M.Tech. (VLSI & ES)" ,"M.Tech. (CSP)" ,"M.Tech. (CESP)" ,"M.Tech. (CESP)" ,"M.Tech. (Communication Engineering & signal processing)" ,"M.Tech. (VLSI & Embeded system)" ,"M.Tech. (Micro Electronics)" ,"M.Tech. (Digital techniques & Instrumentations)" ,"M.Tech. (electronic systems & communications)" ,"M.Tech. (V.L.S.I & Nano Technology)" ,"M.Tech. (V.L.S.I & Nano Technology)" ,"M.Tech. (V.L.S.I Design)" ,"M.Tech. (V.L.S.I Design)" ,"M.Tech. (V.L.S.I Design)" ,"M.Tech. (CESP)" ,"M.Tech. (VLSI Design)");
+     var experience = new Array("25y" ,"26y" ,"21y" ,"12y" ,"11y" ,"10.5y" ,"11y" ,"9y" ,"9y" ,"5y" ,"5.5y" ,"8y" ,"3.2y" ,"3.2y" ,"3.2y" ,"3y" ,"5y" ,"3y" ,"2.5y" ,"2.5y" ,"2.5y" ,"3.5y" ,"1.5y" ,"1.5y" ,"1.5y" ,"1.5y" ,"1.5y" ,"2.5y" ,"1y");
+    var mails = new Array("chandrabhuma@yahoo.co.in" ,"nvrao68@gmail.com ,nvrao68@rediffmail.com" ,"srkopanaty@yahoo.com" ,"mailme_surendranitk@yahoo.co.in" ,"chestialtaff@gmail.com" ,"swethachand7@gmail.com" ,"skmsubanibec@gmail.com" ,"tkrishna479@gmail.com" ,"suneel.miriyala@gmail.com" ,"surendrabachina@gmail.com" ,"idrishshaik@gmail.com" ,"manohar.padyala@gmail.com" ,"swathi.nns@gmail.com" ,"ysruthi30@gmail.com" ,"papanatejaswi@gmail.com" ,"knraju53@gmail.com" ,"sd.imranbasha@gmail.com" ,"koppolukalpana@gmail.com" ,"vasudevareddy2020@gmail.com" ,"sambangi.ramesh86@gmail.com" ,"ravicrr63@gmail.com" ,"varmasuneel7400@gmail.com" ,"ychshareesh492@gmail.com" ,"uma09465@gmail.com" ,"achyut.488@gmail.com" ,"gopichand.dasari@gmail.com" ,"ramesh471ece@gmail.com" ,"gmahesh033@gmail.com" ,"apsanaparveen.shaik@gmail.com");
+      var tr = document.createElement('tr');
+      var th = document.createElement('th');
+      th.appendChild(document.createTextNode('SNo.'));
+       var th1 = document.createElement('th');
+      th1.appendChild(document.createTextNode('Name'));
+       var th2 = document.createElement('th');
+      th2.appendChild(document.createTextNode('Designation'));
+       var th3 = document.createElement('th');
+      th3.appendChild(document.createTextNode('Qualification'));
+       var th4 = document.createElement('th');
+      th4.appendChild(document.createTextNode('Experience'));
+       var th5 = document.createElement('th');
+      th5.appendChild(document.createTextNode('E-Mail'));
+      tr.appendChild(th);
+      tr.appendChild(th1);
+      tr.appendChild(th2);
+      tr.appendChild(th3);
+      tr.appendChild(th4);
+      tr.appendChild(th5);
+      table.appendChild(tr);
+for (var i = 0; i <names.length; i++){
+        var tr = document.createElement('tr');
+        var td = document.createElement('td');
+        var td1 = document.createElement('td');
+        var td2 = document.createElement('td');
+        var td3 = document.createElement('td');
+        var td4= document.createElement('td');
+        var td5 = document.createElement('td');
+        td.appendChild(document.createTextNode(i+1));
+        td1.appendChild(document.createTextNode(names[i]));
+        td2.appendChild(document.createTextNode(designation[i]));
+        td3.appendChild(document.createTextNode(qualification[i]));
+        td4.appendChild(document.createTextNode(experience[i]));
+        td5.appendChild(document.createTextNode(mails[i]));
+        tr.appendChild(td);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
+    }
+    document.body.appendChild(table);
+</script></body>

@@ -1,0 +1,73 @@
+<body>
+</body>
+<style>
+    table{
+        width: 100%;
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		 font-size:14px;
+         border-collapse: collapse;
+		 background-color:white
+    }
+    th, td {
+        border-bottom: 1px solid #ddd;
+         padding: 15px;
+        text-align: left;
+    }
+	 tr:nth-child(even){background-color: #f2f2f2;}
+	th{
+		background-color: #4CAF50;
+
+		color:#ffffff
+	}
+</style>
+<script>
+    var table = document.createElement('table');
+     var names = new Array("Dr.N.Rama Devi" ,"Dr. G. Ravi Kumar" ,"Dr. K. Ramesh" ,"Sri. N.Karthik" ,"Sri. CH.Sridhar" ,"Smt. K.Kamala Devi" ,"Sri. G.Rajesh" ,"Sri. B.Shanker" ,"Sri.P.Sampath Kumar" ,"Sri. Ch.Hari Prasad" ,"Sri. J.Pardhasaradhi" ,"Sri.G.Anil Kumar" ,"Sri.N.Bala Krishna" ,"Sri.B.Vijaya Krishna" ,"Sri.J.Ravindra" ,"Sri.M.Durga Prasada Rao" ,"Sri. K.Rajendra" ,"Sri.B.Praveen Kumar" ,"Sri.M.Suresh Babu" ,"Sri. Sk. Karimulla" ,"Ms. M. Nagendra" ,"Sri. M.Siva Rama Krishna" ,"Sri. I. Venkata Raghavendra" ,"Ms. D. Naga Lakshmi" ,"Sri. M.Vasu" ,"Sri. Sai Goutham Golive" ,"Sri. P. karimulla" ,"Sri. B. Praveen Kumar" ,"Sri. M. Ganesh Babu" ,"Sri. Anai Relish" ,"Sri. S. Subrahmanyam");
+     var designation = new Array("Assoc.Prof. & HOD." ,"Professor" ,"Asst. Prof." ,"Asst. Prof" ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof.");
+     var qualification =new Array("M.Tech. (Power Syatems), Ph.D" ,"M.Tech, Ph.D" ,"M. Tech. (High Voltage Engg.),Ph.D" ,"M.Tech. (Power Systems),(Ph.D)" ,"M.Tech (Power Engg),(Ph.D)" ,"M.Tech (Power Systems),(Ph.D)" ,"M.Tech. (Power Systems)" ,"M.Tech. (Power Systems)" ,"M.Tech (Control systems),(Ph.D)" ,"M.Tech (Ics)" ,"M.Tech. (Power Systems),(Ph.D)" ,"M. Tech. (P.S.E.)" ,"M.Tech. (Embedded Systems)" ,"M.Tech. (Power & Industrial Drives),(Ph.D)" ,"M.Tech. (Control Systems),(Ph.D)" ,"M.Tech. (Power Electronics & Power Systems)" ,"M.Tech" ,"M.Tech. (Power & Industrial Drives)" ,"M.Tech. (Control Systems)" ,"M. Tech. (High Voltage Engineering)" ,"M. Tech. (Power Systems)" ,"M. Tech." ,"M. Tech." ,"M.Tech (Power Systems)" ,"M.Tech (Industrial Power & Automation)" ,"M.Tech (Renewable Energy)" ,"M.Tech (Power system)" ,"M.Tech" ,"M.Tech" ,"M.Tech" ,"M.Tech");
+     var experience = new Array("18y" ,"23y" ,"15y" ,"14y" ,"15y" ,"13y" ,"11y" ,"10y" ,"11y" ,"8y" ,"10y" ,"7y" ,"7y" ,"8y" ,"9y" ,"10y" ,"8y" ,"7y" ,"7y" ,"6y" ,"6y" ,"4y" ,"5y" ,"5y" ,"1y" ,"1y" ,"1y" ,"3y" ,"1y" ,"1y" ,"1y");
+    var mails = new Array("ramadevi_eee@yahoo.co.in" ,"goli.ravikumar@yahoo.com" ,"rameshbec.nandur@gmail.com" ,"wizitkarthik@gmail.com" ,"sridharbec@gmail.com" ,"kamaladevi_electrical@yahoo.com" ,"rajeshgarikapati@gmail.com" ,"shankernitw@gmail.com" ,"pappulasampathkumar@gmail.com" ,"hariprasad777@gmail.com" ,"pardhu_y4@yahoo.com" ,"anil.smile6@gmail.com" ,"nbk6868@gmail.com" ,"bvijayakrishna85@gmail.com" ,"ravindrajanga@gmail.com" ,"mvprasadarao@gmail.com" ,"k.rajendra.eee@gmail.com" ,"praveenkumar_237@yahoo.co.in" ,"suri.253@gmail.com" ,"sk.karimeee@gmail.com" ,"nagendra435@gmail.com" ,"Sivarama263@gmail.com" ,"raghavendra.iv@gmail.com" ,"dasari.nagalakshmi@gmail.com" ,"maddi.vu49@gmail.com" ,"saigowtham248@gmail.com" ,"karimulla.pollisetti@gmail.com" ,"bon.praveen@gmail.com" ,"ganashnitrreee@gmail.com" ,"anairelish6@gmail.com" ,"subbumercy@gmail.com");
+      var tr = document.createElement('tr');
+      var th = document.createElement('th');
+      th.appendChild(document.createTextNode('SNo.'));
+       var th1 = document.createElement('th');
+      th1.appendChild(document.createTextNode('Name'));
+       var th2 = document.createElement('th');
+      th2.appendChild(document.createTextNode('Designation'));
+       var th3 = document.createElement('th');
+      th3.appendChild(document.createTextNode('Qualification'));
+       var th4 = document.createElement('th');
+      th4.appendChild(document.createTextNode('Experience'));
+       var th5 = document.createElement('th');
+      th5.appendChild(document.createTextNode('E-Mail'));
+      tr.appendChild(th);
+      tr.appendChild(th1);
+      tr.appendChild(th2);
+      tr.appendChild(th3);
+      tr.appendChild(th4);
+      tr.appendChild(th5);
+      table.appendChild(tr);
+for (var i = 0; i <names.length; i++){
+        var tr = document.createElement('tr');
+        var td = document.createElement('td');
+        var td1 = document.createElement('td');
+        var td2 = document.createElement('td');
+        var td3 = document.createElement('td');
+        var td4= document.createElement('td');
+        var td5 = document.createElement('td');
+        td.appendChild(document.createTextNode(i+1));
+        td1.appendChild(document.createTextNode(names[i]));
+        td2.appendChild(document.createTextNode(designation[i]));
+        td3.appendChild(document.createTextNode(qualification[i]));
+        td4.appendChild(document.createTextNode(experience[i]));
+        td5.appendChild(document.createTextNode(mails[i]));
+        tr.appendChild(td);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
+    }
+    document.body.appendChild(table);
+</script></body>

@@ -1,0 +1,73 @@
+<body>
+</body>
+<style>
+    table{
+        width: 100%;
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		 font-size:14px;
+         border-collapse: collapse;
+		 background-color:white
+    }
+    th, td {
+        border-bottom: 1px solid #ddd;
+         padding: 15px;
+        text-align: left;
+    }
+	 tr:nth-child(even){background-color: #f2f2f2;}
+	th{
+		background-color: #4CAF50;
+
+		color:#ffffff
+	}
+</style>
+<script>
+    var table = document.createElement('table');
+     var names = new Array("Dr. Ch. Nagasatish Kumar" ,"Dr. T. Chandra Sekhar Rao" ,"Sri P. Bapi Raju" ,"Sri. N. P. N Moorthy" ,"Sri. Y. Ravi" ,"Sri. S. Ganapathi Prasad" ,"Sri. T. Chiranjeevi" ,"Sri. K. Ravi Kumar" ,"Sri. A. Vijaya Rama Raju" ,"Sri. K. Hari Babu" ,"Sri. T. Santhi Sagar" ,"Sri. Y. Murali Krishna" ,"Sri. R. L. R Nagendra Prasad" ,"Ms. M. Navya" ,"Sri. Y. Prasanna Kumar" ,"Sri. N. Pradeep" ,"Sri K. Babu Rao" ,"Sri. B. Ravi" ,"Sri. K. Jaya sundar" ,"Sri U. S. Rama Krishna" ,"Sri. G. Rajendra " ,"Sri. S. Suresh Kumar " ,"Sri. G. Prasanth Babu " ,"Sri. K. Anil" ,"Sri. E. Bala Koteswara Rao " ,"Ms. Y. Vidya Indrasena " ,"Sri. D. Mahesh Reddy " ,"K. Raja " ,"Sri. M. Veerabrahmam" ,"Sri. P. Sai Krishna");
+     var designation = new Array("Professor" ,"Professor" ,"Associate Prof.", "Asst.Prof." ,"Asst.Prof.", "Asst.Prof.", "Asst.Prof." ,"Asst.Prof.", "Asst.Prof.", "Asst.Prof.","Asst.Prof.","Asst.Prof.","Asst.Prof.","Asst.Prof." ,"Asst.Prof.", "Asst.Prof.", "Asst.Prof.", "Asst.Prof." ,"Asst.Prof." ,"Asst.Prof." ,"Asst.Prof.", "Asst.Prof." ,"Asst.Prof." ,"Asst.Prof." ,"Asst.Prof." ,"Asst.Prof.", "Asst.Prof.", "Asst. Prof. ", "Asst. Prof. " ,"Asst. Prof. ");
+     var qualification =new Array("M.Tech. (Structures), Ph.D" ,"M.Tech. (Structures), Ph.D" ,"M.E. in Soil Mechanics & Foundation Engg." ,"M.Tech. (Structures)" ,"M.Tech. (Transportation Engg.)" ,"M.Tech. (Water Resources Engg.)" ,"M.Tech. (Transportation Engg.)" ,"M.Tech. (Construction Management)" ,"M.Tech. (Water Resources Engg.) " ,"M.E (Structures)" ,"M.E (Structures)" ,"M.Tech. (Structures)" ,"M.Tech. (Water Resources Engg.) " ,"M.Tech. (Structures)" ,"M.Tech. (Structures)" ,"M.Tech. (Structures)" ,"M.Tech. (Transportation & Management)" ,"M.Tech. (Structures)" ,"M.Tech. (Transportation Engg.)" ,"M.Tech. (Transportation Engg.)" ,"M.Tech. (Structures)" ,"M.Tech. (Urban Planning)" ,"M.Tech. (Structures)" ,"M.Tech. (Geo. Engg.)" ,"M.Tech. " ,"M.Tech. ((Structures)" ,"M.Tech. ((Structures)" ,"M. Tech. (Structures)" ,"M. Tech. " ,"M. Tech. ");
+     var experience = new Array("17y" ,"27y" ,"29y" ,"35y" ,"8.5y" ,"8.5y" ,"8y" ,"8.5y" ,"8.5y" ,"6y" ,"6y" ,"6y" ,"3.5y,10y (industry)" ,"6y" ,"5.5y" ,"5.5y" ,"3.5y" ,"3.5y" ,"3.5y" ,"7y" ,"4y" ,"1.4y" ,"1.4y" ,"5y" ,"2y" ,"1y" ,"1y" ,"1y " ,"- " ,"-");
+    var mails = new Array("nagasatish123@gmail.com" ,"hoshikonni@gmail.com" ,"Bapiraju bec@gmail.com" ,"npnmoorthy@yahoo.com" ,"Ravireddy29@gmail.com" ,"ganapathinitw@gmail.com" ,"chiru861@gmail.com" ,"ravi.cem@gmail.com " ,"vijayaramarajua@gmail.com" ,"korrakuti_1987@yahoo.com" ,"Santhisagar4u@gmail.com" ,"Murali.bec21@gmail.com" ,"rlrnagendra@gmail.com" ,"mandadapunavya@gmail.com" ,"Prasannakumar33@gmail.com" ,"pradeepnaladi@gmail.com" ,"baburao.kanapala@gmail.com" ,"bayyavarapuravi@gmail.com" ,"jaya.sundhar318@gmail.com" ,"sivaramakr@gmail.com" ,"rajendra.mbts@gmail,com" ,"sureshkumarssk1@gmail.com" ,"prasanthbabu.cad@gmail.com" ,"anilkodimela@gmail.com" ,"ebkrao@gmail.com" ,"vidya78.yarly@gmail.com" ,"maheshce423@gmail.com" ,"rajakatta9581@gmail.com" ,"brahmi518@gmail.com" ,"saikrishna.ponnaganti@gmail.com");
+      var tr = document.createElement('tr');
+      var th = document.createElement('th');
+      th.appendChild(document.createTextNode('SNo.'));
+       var th1 = document.createElement('th');
+      th1.appendChild(document.createTextNode('Name'));
+       var th2 = document.createElement('th');
+      th2.appendChild(document.createTextNode('Designation'));
+       var th3 = document.createElement('th');
+      th3.appendChild(document.createTextNode('Qualification'));
+       var th4 = document.createElement('th');
+      th4.appendChild(document.createTextNode('Experience'));
+       var th5 = document.createElement('th');
+      th5.appendChild(document.createTextNode('E-Mail'));
+      tr.appendChild(th);
+      tr.appendChild(th1);
+      tr.appendChild(th2);
+      tr.appendChild(th3);
+      tr.appendChild(th4);
+      tr.appendChild(th5);
+      table.appendChild(tr);
+for (var i = 0; i <names.length; i++){
+        var tr = document.createElement('tr');
+        var td = document.createElement('td');
+        var td1 = document.createElement('td');
+        var td2 = document.createElement('td');
+        var td3 = document.createElement('td');
+        var td4= document.createElement('td');
+        var td5 = document.createElement('td');
+        td.appendChild(document.createTextNode(i+1));
+        td1.appendChild(document.createTextNode(names[i]));
+        td2.appendChild(document.createTextNode(designation[i]));
+        td3.appendChild(document.createTextNode(qualification[i]));
+        td4.appendChild(document.createTextNode(experience[i]));
+        td5.appendChild(document.createTextNode(mails[i]));
+        tr.appendChild(td);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
+    }
+    document.body.appendChild(table);
+</script></body>

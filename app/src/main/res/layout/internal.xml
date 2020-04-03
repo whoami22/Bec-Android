@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/internalLayout">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbintr"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fbc02d"
+        android:elevation="4dp"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Internal Marks Estimator"
+        app:titleTextColor="#fff" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/printtar"
+            android:layout_marginTop="70dp"
+            android:text="1st AAT marks"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/aat"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.137" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignEnd="@+id/mid1"
+            android:layout_below="@+id/textView"
+            android:text="2nd AAT marks"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/am"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/aat2"
+            app:layout_constraintHorizontal_bias="0.701"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <Button
+            android:id="@+id/am"
+
+            android:layout_width="142dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:background="#000"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Submit"
+            android:textColor="#FFE712"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.781"
+            tools:ignore="NotSibling,UnknownId" />
+
+        <EditText
+            android:id="@+id/aat"
+            android:layout_width="122dp"
+            android:layout_height="42dp"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignStart="@+id/aat2"
+            android:singleLine="true"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.138" />
+
+        <EditText
+            android:id="@+id/aat2"
+            android:layout_width="122dp"
+            android:layout_height="42dp"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignTop="@+id/textView2"
+            android:singleLine="true"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22" />
+
+
+        <TextView
+            android:id="@+id/printtar"
+            android:layout_width="312dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/tar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.672" />
+
+        <TextView
+            android:id="@+id/mid1"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="13dp"
+            android:text="1st mid marks"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@+id/am"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="122dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/mid1"
+            android:layout_alignBottom="@+id/mid1"
+            android:layout_alignEnd="@+id/printtar"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.755"
+            app:layout_constraintStart_toStartOf="@+id/mid1"
+            app:layout_constraintTop_toBottomOf="@+id/aat2"
+            app:layout_constraintVertical_bias="0.037" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="119dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/mid1"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView8"
+            android:entries="@array/attand"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.887"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignStart="@+id/mid1"
+            android:layout_below="@+id/spinner"
+            android:text="Target Score"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@+id/am"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.191"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/tar"
+            android:layout_width="109dp"
+            android:layout_height="41dp"
+            android:layout_alignEnd="@+id/printtar"
+            android:layout_below="@+id/spinner"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.899"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:layout_constraintVertical_bias="0.059" />
+
+        <Switch
+            android:id="@+id/switchinternal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/am"
+            android:layout_marginTop="11dp"
+            android:background="#fbc02d"
+            android:elevation="2dp"
+            android:text="How to Use ?"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.866" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/spinner"
+            android:layout_toStartOf="@+id/editText"
+            android:text="Attendance Marks"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/internalHow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/switchinternal"
+            android:text="- Enter AAT-1 and AAT-2 Mid-Term-1 Marks In Text Boxes\n- Choose Attendance marks for the Subject (0-5) \n- Then Target Score is the Average of 1 &amp; 2 AAT's and Mid-Term 1 &amp; 2 and Attendance \t Marks that are Calculated for Internals \n- Target Score(Total Internal Marks) is Calculated for 40 \n HINT: If my  AAT-1 marks are 7, AAT-2 marks are 9, MID-1 marks are 18 and Attendance is 85&#63; (3 Marks) , then to get 32 marks in Internals how much should I score in Mid-Term-2 ?"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="650dp" />
+
+    </RelativeLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "867520643773",
+    "firebase_url": "https://jovial-syntax-194010.firebaseio.com",
+    "project_id": "jovial-syntax-194010",
+    "storage_bucket": "jovial-syntax-194010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867520643773:android:aa34f3698f8a46a6",
+        "android_client_info": {
+          "package_name": "com.imangazaliev.circlemenu.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867520643773-2175jav5qbo7d9ujvtrnk9o1ctb64c67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgfjeiDn353U6zoxP9jT7R-tFfBxnPKzs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867520643773:android:04eebec56a49fadf",
+        "android_client_info": {
+          "package_name": "com.imangazaliev.circlemenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867520643773-2175jav5qbo7d9ujvtrnk9o1ctb64c67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgfjeiDn353U6zoxP9jT7R-tFfBxnPKzs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

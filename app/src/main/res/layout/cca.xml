@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#484848">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tbcca"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            android:background="#f9a825"
+            app:titleTextColor="#fff"
+            app:title="CCA"
+            android:foregroundTint="#696969"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:elevation="4dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="158dp"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/callCca"
+                android:src="@drawable/cca_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/cca2home"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:tint="@color/clear"
+                app:layout_anchor="@id/app_bar"
+                app:layout_anchorGravity="bottom|end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.016"
+                app:srcCompat="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/whatsappCca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_above="@+id/fbCca"
+                android:layout_toEndOf="@+id/cca2home"
+                android:background="@drawable/whatsapp_icon" />
+
+            <ImageButton
+                android:id="@+id/fbCca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/cca2home"
+                android:layout_below="@+id/cca2home"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fb_icon" />
+
+            <ImageButton
+                android:id="@+id/callCca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/cca2home"
+                android:background="@drawable/call_icon"
+                android:backgroundTint="@color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:gravity="start"
+            android:text="@string/cca_text"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15.5sp" />
+        </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+

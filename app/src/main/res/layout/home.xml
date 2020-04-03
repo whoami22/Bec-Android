@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clearherea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bec.bapatla.college.Main2Activity"
+    tools:showIn="@layout/app_bar_main2">
+    <!-- android:background="#adcee1"-->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#000000"
+        android:shadowColor="#ffffff"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="BAPATLA ENGINEERING COLLEGE"
+        android:textAlignment="center"
+        android:textColor="#f5de08"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066"
+        app:srcCompat="@drawable/logo" />
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/background"
+        android:text="@string/notify"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:background="#ffffff"
+        >
+
+        <com.bec.bapatla.CircleMenu
+            android:id="@+id/circle_menuhome"
+            android:layout_width="395dp"
+            android:layout_height="390dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:hintsEnabled="true"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <com.bec.bapatla.CircleMenuButton
+                android:id="@+id/alerthome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:colorNormal="#F44336"
+                app:colorPressed="#E53935"
+                app:hintText="Notifications"
+                app:icon="@drawable/ic_alert" />
+
+            <com.bec.bapatla.CircleMenuButton
+                android:id="@+id/favoritehome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:colorNormal="#2196F3"
+                app:colorPressed="#1E88E5"
+                app:hintText="Circulars"
+                app:icon="@drawable/ic_favorite" />
+
+            <com.bec.bapatla.CircleMenuButton
+                android:id="@+id/searchhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:colorNormal="#4CAF50"
+                app:colorPressed="#43A047"
+                app:hintText="Estimators"
+                app:icon="@drawable/estimate" />
+
+
+
+            <com.bec.bapatla.CircleMenuButton
+                android:id="@+id/placehome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:colorNormal="#9C27B0"
+                app:colorPressed="#8E24AA"
+                app:hintText="Others"
+                app:icon="@drawable/ic_place" />
+
+      <!--      <com.imangazaliev.circlemenu.CircleMenuButton
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:colorNormal="#FF9800"
+                app:colorPressed="#FB8C00"
+                app:hintText="Edit"
+                app:icon="@drawable/ic_edit" /> -->
+
+        </com.bec.bapatla.CircleMenu>
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

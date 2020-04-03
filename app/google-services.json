@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "740272745052",
+    "firebase_url": "https://bapatla-college-app.firebaseio.com",
+    "project_id": "bapatla-college-app",
+    "storage_bucket": "bapatla-college-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740272745052:android:678f2aaa2fe1f718",
+        "android_client_info": {
+          "package_name": "com.bec.bapatla.college"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740272745052-42dmo01cfp3nhdfutn7isdg8vt5ims11.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bec.bapatla.college",
+            "certificate_hash": "d44d0c44f98980f1ec64b32809e9ac27fc47452e"
+          }
+        },
+        {
+          "client_id": "740272745052-r6scd0vpkc31iaspofvok8r6upqoav2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bec.bapatla.college",
+            "certificate_hash": "224a5dd391935dbac409591cf32f2754021def54"
+          }
+        },
+        {
+          "client_id": "740272745052-9csm2oms4aabm90t3fffihh01m1f31rf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB29wlRcEdi9mfvyeAcWD3mcuHD5xC7iX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740272745052-9csm2oms4aabm90t3fffihh01m1f31rf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

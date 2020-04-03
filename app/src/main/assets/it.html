@@ -1,0 +1,74 @@
+<body>
+<b>Faculty Info</b>
+</body>
+<style>
+    table{
+        width: 100%;
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		 font-size:14px;
+         border-collapse: collapse;
+		 background-color:white
+    }
+    th, td {
+        border-bottom: 1px solid #ddd;
+         padding: 15px;
+        text-align: left;
+    }
+	 tr:nth-child(even){background-color: #f2f2f2;}
+	th{
+		background-color: #4CAF50;
+
+		color:#ffffff
+	}
+</style>
+<script>
+    var table = document.createElement('table');
+     var names = new Array("Prof. N. Sivaram Prasad" ,"Dr K. Srinivasa Rao" ,"Sri G. Prasad" ,"Sri K. Bhaskara Rao" ,"Sri.P.A.V.Krishna Rao" ,"Sri B. Krishnaiah" ,"Sri M. Praveen Kumar" ,"Sri N. Srinivasa Rao" ,"Sri P. Srinivasa Rao" ,"Sri K. Sai Prasanth" ,"Sri P. Ratna Prakash" ,"Sri P. Ravi Kumar" ,"Sri K. Suresh Kumar" ,"Sri K. Ravitej" ,"Sri D. Siva Phanindra" ,"Sri P. Chandra Sekhar" ,"Sri Sadhu Ratna Babu" ,"Sri Shaik. Mabasha" ,"Sri K. Gopi Raju" ,"Sri B. Murali Krishna");
+     var designation = new Array("Prof. & HOD." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof." ,"Asst. Prof.");
+     var qualification =new Array("M.Tech. (Comp. Science), (Ph.D)" ,"M.Tech. (Comp. Science), Ph.D" ,"M.Tech. (CST)" ,"M.Tech(CSE)" ,"M.Tech(CSE)" ,"M.E(CSE), (Ph.D)" ,"M.Tech(CSE)" ,"M.Tech(Information Security)" ,"M.Tech(CSE)" ,"M.Tech(CSE)" ,"M.Tech(CSE)" ,"M.Tech(CSE), (Ph.D)" ,"M.Tech(IT)" ,"M.Tech(IT)" ,"M.Tech. (CST), (Ph.D)" ,"M.Tech. (CST)" ,"M.Tech. (CSE)" ,"M.Tech. (CSE)" ,"M.Tech. (CSE)" ,"M.Tech. (CSE)");
+     var experience = new Array("20" ,"10 (6)" ,"8" ,"8" ,"8" ,"8" ,"8" ,"7" ,"7" ,"7" ,"7 (2)" ,"6 (4)" ,"6" ,"6" ,"6" ,"2 (1)" ,"1 (1)" ,"1" ,"1" ,"1");
+    var mails = new Array("becithod@gmail.com" ,"ksr_bec@hotmail.com" ,"prasad.bec@gmail.com" ,"kbhaskar511@gmail.com" ,"guntur.krishna@gmail.com" ,"krishnacse550@gmail.com" ,"praveenkumarmuvva@gmail.com" ,"srihimasri@gmail.com" ,"psr.bec@gmail.com" ,"prasanth.bec42@gmail.com" ,"prakashcse2006@gmail.com" ,"palacharla.ravikumar@gmail.com" ,"sureshkallagunta@gmail.com" ,"ravitej9999@gmail.com" ,"daggubatisivaphanindra@gmail.com" ,"p.chandra1205@gmail.com" ,"sadhu.ratnababu@gmail.com" ,"mabashapec@gmail.com" ,"keerthisweet61@gmail.com" ,"bmkrishna50@gmail.com");
+      var tr = document.createElement('tr');
+      var th = document.createElement('th');
+      th.appendChild(document.createTextNode('SNo.'));
+       var th1 = document.createElement('th');
+      th1.appendChild(document.createTextNode('Name'));
+       var th2 = document.createElement('th');
+      th2.appendChild(document.createTextNode('Designation'));
+       var th3 = document.createElement('th');
+      th3.appendChild(document.createTextNode('Qualification'));
+       var th4 = document.createElement('th');
+      th4.appendChild(document.createTextNode('Experience'));
+       var th5 = document.createElement('th');
+      th5.appendChild(document.createTextNode('E-Mail'));
+      tr.appendChild(th);
+      tr.appendChild(th1);
+      tr.appendChild(th2);
+      tr.appendChild(th3);
+      tr.appendChild(th4);
+      tr.appendChild(th5);
+      table.appendChild(tr);
+for (var i = 0; i <names.length; i++){
+        var tr = document.createElement('tr');
+        var td = document.createElement('td');
+        var td1 = document.createElement('td');
+        var td2 = document.createElement('td');
+        var td3 = document.createElement('td');
+        var td4= document.createElement('td');
+        var td5 = document.createElement('td');
+        td.appendChild(document.createTextNode(i+1));
+        td1.appendChild(document.createTextNode(names[i]));
+        td2.appendChild(document.createTextNode(designation[i]));
+        td3.appendChild(document.createTextNode(qualification[i]));
+        td4.appendChild(document.createTextNode(experience[i]));
+        td5.appendChild(document.createTextNode(mails[i]));
+        tr.appendChild(td);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
+    }
+    document.body.appendChild(table);
+</script></body>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tbece"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            android:background="#f9a825"
+            app:titleTextColor="#fff"
+            app:title="Electronics Communication"
+            android:foregroundTint="#f9a825"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/img4add"
+            android:layout_width="88dp"
+            android:layout_height="111dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:adjustViewBounds="false"
+            android:src="@drawable/ece" />
+
+        <TextView
+            android:id="@+id/eceinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#000"
+            android:text="@string/ecedept" />
+
+        <Switch
+            android:id="@+id/eceswitch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="4dp"
+            android:background="#f9a825"
+            android:checked="false"
+            android:gravity="center"
+            android:text="Faculty Info"
+            android:textColor="#000"
+            android:textOff="Off"
+            android:textOn="On"
+            android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/scrosece"
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eceswitch"
+        app:layout_constraintVertical_bias="0.0">
+
+        <WebView
+            android:id="@+id/wvece"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="140dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
